@@ -127,6 +127,33 @@ $("#gizli").css('left',kenarsol);
         }
         return false;
     });
+
+
+
+    $(".adver").click(function(){
+        if ($("#gizli1").css('display')=='none'){
+		kenarust=$(window).height() / 2 - $("#gizli1").height() / 2;
+		kenarsol=$(window).width() / 2 - $("#gizli1").width() / 2;
+
+		
+		$("#gizli1").css('top',kenarust+175);
+$("#gizli1").css('left',kenarsol);
+            $("#gizli1").css('display','block');
+}
+        else{
+            $("#gizli1").css('display','none');
+        }
+        return false;
+    });
+
+  $("#google").click(function(){
+        $("#formicfcon").hide();
+        $("#giris").fadeIn();
+        return false;
+    });
+
+
+
 //        $("#describe").keyup(function(){
 //            vs = document.getElementById('describe');
 //            if ((50-vs.value.length)<0){

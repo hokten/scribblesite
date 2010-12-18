@@ -195,7 +195,7 @@
       <ul>
         <li><a href="#">About us</a></li>
         <li><a href="#">Faq</a></li>
-        <li><a href="#">Advertise</a></li>
+        <li><a class="adver" href="#">Advertise</a></li>
         <li><a href="#">Terms of service</a></li>
 
         <li><a href="#">Privacy</a></li>
@@ -269,6 +269,53 @@
 
 
   </div>
+  <div id="gizli1" style="position:absolute;">
+      <table id="formtablofcon">
+        <tr>
+          <td class="topleftfcon"></td>
+          <td class="toprightfcon" onclick="$('#gizli1').css('display','none'); $('#name-position').val(''); $('#company-address').val(''); $('#contact-email').val(''); $('#describe').html('');"></td>
+        </tr>
+        <tr>
+          <td class="ortafcon" colspan="2">
+            <table id="formicfcon">
+              <tr>
+                <td class="header" colspan="4">Let me in!</td>
+              </tr>
+              <tr>
+                <td class="fyazi" colspan="4">
+                  <p>Sorry! We're closed to the public. To become part of our community, you must be invited by someone you know.</p>
+                  <p>By staying private, we can keep our social interactions relevant and useful for our members. If you're a business with a strong local presence and believe you can benefit our community, please don't hesitate to contact us using the form below. We'll try our best to get back to you in a timely manner.</p>
+                </td>
+              </tr>
+              <tr>
+                <td><img id="google" src="images/sites/google.png"></td>
+                <td><img src="images/sites/yahoo.jpg"></td>
+                <td><img src="images/sites/hotmail.jpg"></td>
+                <td><img src="images/sites/outlook.jpg"></td>
+
+              <tr>
+                <td colspan="3" style="padding-bottom:10px;">
+                  <input class="submit" type="submit" value="Request Invitation"/> 
+                  <input class="reset" type="reset" value="Cancel" onclick="$('#gizli').css('display','none'); $('#name-position').val(''); $('#company-address').val(''); $('#contact-email').val(''); $('#describe').html('');"/> 
+                </td>
+              </tr>
+
+
+            </table>
+            <table id="giris" style="display:none">
+              <tr><td>vdasdad<br>444444vdasdad<br>vdasdad<br>vdasdad<br>vdasdad<br>vdasdad<br>vdasdad<br></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td class="altfcon" colspan="3"></td>
+        </tr>
+      </table>
+  </div>
+
 
 
 </body>

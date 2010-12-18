@@ -105,6 +105,56 @@ form,fieldset {
   height:10px;
   background:url(../images/sites/alt.png) no-repeat;
 }
+
+
+#formtablofcon {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width:460px;
+  padding:0px 0px 0px 0px;
+}
+
+.topleftfcon {
+  background:url(../images/sites/topleftfcon.png) no-repeat;
+  width:439px;
+  height:21px;
+}
+
+.toprightfcon {
+  background:url(../images/sites/topright.png) no-repeat;
+  width:21px;
+  height:21px;
+  cursor:pointer;
+}
+.ortafcon{
+  width:460px;
+  height:210px;
+  background:url(../images/sites/ortafcon.png) repeat-y;
+  vertical-align:top;
+}
+.altfcon{
+  width:460px;
+  height:10px;
+  background:url(../images/sites/altfcon.png) no-repeat;
+}
+#formicfcon {
+  width:370px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  padding-right:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
 #formic {
   width:370px;
   margin-left: auto;
