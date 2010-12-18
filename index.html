@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>HTML5 Demo: postMessage (same domain)</title>
+    <link rel="stylesheet" href="styles/media.css" type="text/css" />
+
+    <script src="javascripts/jquery-1.4.4.min.js"></script>
+    <script src="javascripts/center-plugin_1.0.1.js"></script>
+
+    <script src="javascripts/java.js"></script>
+    <script language="javascript">
+      var hucre=new Array();
+      var colors = new Array("#001120", "#442b49", "#673d41", "#4b7f59", "#98805a", "#6d98a8", "#959595");
+      for(i=0;i<43;i++){
+        hucre[i]=i;
+      }
+      $(document).ready(function() {
+        rastgele = Math.floor(Math.random() * 7) + 1;
+        $("body").css({"background" : colors[rastgele-1] + " url(images/sites/body"+rastgele+".jpg)"});
+        $('.btn-let-me-in').css({"background" : "url(images/sites/btn-let-me-in"+rastgele+".jpg) no-repeat"});
+        $('.btn-more-about-us').css({"background" : "url(images/sites/btn-more-about-us"+rastgele+".gif) repeat-x"});
+        $('#logo').css({"background" : "url(images/sites/logo"+rastgele+".jpg) no-repeat"});
+        $('#logo').css({"background-position" : "5px 0px"});
+        $('#introic').css({"background" : "url(images/sites/intro"+rastgele+".gif) repeat-x"});
+        var resimler = [];
+        var numbers= ["dizi"];
+        var k=0;
+        $('#large tr > td[colspan!="4"]').each(function() {
+          z = Math.floor(Math.random() * 62) + 1;
+          while(include(numbers,z)) {
+            z = Math.floor(Math.random() * 62) + 1;
+          }
+          z=parseInt(z);
+          hucre[k]=$(this);
+          numbers.push(z);
+          if (z < 10){
+            z = "0" + z;
+          }
+          image = 'img-' + z + '.jpg';
+          resimler.push(image);
+          k++;
+        });
+        shuffle(hucre);
+        for(j=0;j<52;j++){
+          hucre[j].append('<img style="width:100px;height:100px;margin:0px 0px 0px 0px;" src="images/'+resimler[j]+'" />');
+
+        }
+
+      });
+    </script>
+
+
+  </head>
+  <body>
+
+  </div>
+  <div id="container">
+    <table  id="large">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="logo" colspan="4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="4">
+          <form action="/" method="post" id="LoginForm">
+            <input type="hidden" name="do" value="1" />
+            <fieldset>
+              <div class="login">
+                <div class="login-inner">
+                  <div class="row">
+
+                    <label for="login">Login:</label>
+                    <span class="string"><input id="login" class="text" type="text" name="system_login" value="" /></span>
+                  </div>
+                  <div class="row">
+                    <label for="password">Password:</label>
+                    <span class="string"><input id="password" class="text" type="password" type="password" name="system_pass" value="" /></span>
+                  </div>
+                  <div class="row">
+
+                    <div class="remember">
+                      <input id="remember" type="checkbox" name="not_my_computer"/>
+                      <label for="remember">Keep signed in</label>
+                    </div>
+                    <a class="lnk-forgot-pass" href="#">Forgot password?</a>
+                  </div>
+                </div>
+                <input class="submit" type="submit" value="GO" />
+
+              </div>
+            </fieldset>
+          </form>
+          <div class="forgot-pass" style="display:none">
+            <form action="/security/users/forgot" method="post" id="ForgotForm" class="forgot-pass-form" onsubmit="return false;">
+              <fieldset>
+                <legend>Password Recovery:</legend>
+                <div class="row">
+
+                  <input type="hidden" name="Ajax" value="1"/>
+                  <label for="email">Email address:</label>
+                  <span class="string"><input id="email" type="text" name="UI[email]"/></span>
+                  <input class="submit" type="submit" value="send" onclick="send_password();"/>
+                </div>
+                <div class="row">
+                  <a class="lnk-login" href="#">Back to Login Screen</a>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
+
+
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="intro" colspan="4">
+          <div id="introic">
+          <div id="introyazi">
+            <strong>Scribblesite</strong> [skrib-uh l-sahyt] <img src="images/sites/sound.png" /><br />
+            <strong>(noun)</strong> A social networking platform you can call home.<br />
+
+            <em>Scribblesite</em> is by invitation-only; nobody wants strangers in their home.<br />
+
+          </div>
+          <a class="btn-let-me-in" href="#">Let me in!</a>
+          <a class="btn-more-about-us" href="#">More about us</a>
+        </div>
+
+
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div id="footer">
+
+      <span>Scribblesite (c) 2010</span>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Faq</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Terms of service</a></li>
+
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="gizli" style="position:absolute;display:none">
+    <form action="/security/users/request" method="post" id="RequestForm" onsubmit="return false;"> 
+      <table id="formtablo">
+        <tr>
+          <td class="topleft"></td>
+          <td class="topright" onclick="$('#gizli').css('display','none'); $('#name-position').val(''); $('#company-address').val(''); $('#contact-email').val(''); $('#describe').html('');"></td>
+        </tr>
+        <tr>
+          <td class="orta" colspan="2">
+
+            <table id="formic">
+              <tr>
+                <td class="header" colspan="3">Let me in!</td>
+              </tr>
+              <tr>
+                <td class="fyazi" colspan="3">
+                  <p>Sorry! We're closed to the public. To become part of our community, you must be invited by someone you know.</p>
+                  <p>By staying private, we can keep our social interactions relevant and useful for our members. If you're a business with a strong local presence and believe you can benefit our community, please don't hesitate to contact us using the form below. We'll try our best to get back to you in a timely manner.</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">
+                  <label for="contact-email">Contact Email <span>*</span>:</label>
+                  <input id="name-position" name="request_name" type="text"/>
+                </td>
+                <td style="width:10%;"></td>
+                <td style="text-align:left;">
+                  <label for="company-address">Company Address <span>*</span>:</label>
+                  <input id="contact-email" name="request_email" type="text" maxlength="50"/>
+                </td>
+
+              </tr>
+              <tr>
+                <td style="text-align:left;;" colspan="3"><label for="company-address">Company Address <span>*</span>:</label>
+                  <input id="company-address" name="request_address" type="text"/>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="text-align:left;" colspan="3"><label for="describe">Describe your company <span>*</span>:</label>
+                  <textarea id="describe" name="request_message" cols="16" rows="4"></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="padding-bottom:10px;">
+                  <input class="submit" type="submit" value="Request Invitation"/> 
+                  <input class="reset" type="reset" value="Cancel" onclick="$('#gizli').css('display','none'); $('#name-position').val(''); $('#company-address').val(''); $('#contact-email').val(''); $('#describe').html('');"/> 
+                </td>
+              </tr>
+
+
+            </table>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td class="alt" colspan="2"></td>
+        </tr>
+      </table>
+    </form>
+
+
+
+  </div>
+
+
+</body>
+      </html>
+
+
+
+
+
+

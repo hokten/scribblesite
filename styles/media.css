@@ -1,0 +1,388 @@
+body
+{
+  margin-top:50px;
+  text-align: center;
+  font:10px/12px Arial, Helvetica, sans-serif;
+}
+
+div#container
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 990px;
+}
+#large{
+  border-spacing: 0px;
+  border-collapse: collapse;
+  padding:0px 0px 0px 0px;
+}
+#large td {
+  border:none;
+  margin:0;
+  padding-top:0px;
+  padding-bottom:8px;
+  padding-left:5px;
+  padding-right:5px;
+}
+td {
+  padding:0;
+}
+#intro {
+  overflow:hidden;
+  vertical-align:top;
+  text-align:left;
+
+}
+#introic {
+  width:431px;
+  height:100px;
+}
+
+#introyazi {
+  padding-top:12px;
+  float:left;
+  font:11px/13px Arial, Helvetica, sans-serif;
+  color:#fff;
+  margin-left:14px;
+}
+
+.btn-let-me-in {
+  width:65px;
+  height:32px;
+  float:left;
+  font:11px/32px Arial, Helvetica, sans-serif;
+  color:#fff;
+  margin:10px 0 0 93px;
+  padding:0 0 0 46px
+}
+
+.btn-more-about-us {
+  width:117px;
+  height:32px;
+  float:left;
+  font:11px/32px Arial, Helvetica, sans-serif;
+  color:#fff;
+  text-align:center;
+  margin:10px 0 0 11px
+}
+form,fieldset {
+  display:block;
+  border:none;
+  margin:0;
+  padding:0
+}
+#logo {
+  overflow:hidden;
+  text-indent:-9999px;
+  background-position:5px 0px;
+}
+#formtablo {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width:424px;
+  padding:0px 0px 0px 0px;
+}
+.topleft {
+  background:url(../images/sites/topleft.png) no-repeat;
+  width:403px;
+  height:21px;
+}
+
+.topright {
+  background:url(../images/sites/topright.png) no-repeat;
+  width:21px;
+  height:21px;
+  cursor:pointer;
+}
+.orta{
+  width:424px;
+  height:210px;
+  background:url(../images/sites/orta.png) repeat-y;
+  vertical-align:top;
+}
+.alt{
+  width:424px;
+  height:10px;
+  background:url(../images/sites/alt.png) no-repeat;
+}
+#formic {
+  width:370px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  padding-right:0px;
+}
+#formic span {
+  color:red
+}
+.fyazi  {
+  width:100%;
+  background:#fff;
+  border:1px solid #dfe8ea;
+  text-align:left;
+  font:11px/13px Arial, Helvetica, sans-serif;
+  color:#6e6e6e;
+  padding:15px 15px 15px 15px;
+  overflow:hidden;
+
+}
+
+.header {
+  background:url(../images/sites/ico-info.gif) no-repeat 0 50%;
+  width:100%;
+  padding-left:20px;
+  text-align:left;
+  font:14px/18px Arial, Helvetica, sans-serif;
+  color:#2ea5e1;
+  padding-bottom:10px;
+
+}
+#formic td{
+  padding-top:10px;
+}
+#formic input{
+  width:100%;
+  height:15px;
+  font:11px Arial, Helvetica, sans-serif;
+  border:1px solid #c8e8ff;
+  outline:none;
+}
+label {
+  display:block;
+  font:11px/14px Arial, Helvetica, sans-serif;
+  color:#3babe3;
+  overflow:hidden;
+  margin:0 0 5px 15px;
+}
+#formic textarea {
+  width:100%;
+  float:left;
+  font:11px Arial, Helvetica, sans-serif;
+  overflow:auto;
+  border:1px solid #c8e8ff;
+  outline:none;
+}
+#formic input.submit {
+  background:url(../images/sites/btn-request-invitation.gif) no-repeat;
+  width:113px;
+  height:19px;
+  float:left;
+  text-indent:-9999px;
+  overflow:hidden;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin:6px 0 0 10px;
+  padding:18px 0 0 112px
+}
+
+#formic input.reset {
+  background:url(../images/sites/btn-cancel.gif) no-repeat;
+  width:53px;
+  height:19px;
+  float:left;
+  text-indent:-9999px;
+  overflow:hidden;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin:6px 0 0 4px;
+  padding:18px 0 0 52px
+}
+
+.captcha .string input,.login .string input,.forgot-pass .string input {
+  background:none;
+  width:100%;
+  float:left;
+  font:11px Arial, Helvetica, sans-serif;
+  border:0;
+  outline:none;
+  margin:0;
+  padding:0
+}
+
+
+
+
+.login fieldset {
+  width:100%;
+  display:block;
+  overflow:hidden
+}
+
+.login-inner {
+  width:319px;
+  float:left;
+  margin:16px 0 0
+}
+
+.login .row {
+  width:209px;
+  overflow:hidden;
+  padding:0 0 10px 110px
+}
+
+.login label {
+  width:82px;
+  float:left;
+  font:11px/18px Arial, Helvetica, sans-serif;
+  color:#fff;
+  text-align:right;
+  margin:0 0 0 -110px
+}
+
+.login .remember input {
+  width:15px;
+  height:15px;
+  float:left;
+  outline:none;
+  margin:0 6px 0 0
+}
+
+.login .remember label {
+  width:auto;
+  font:11px/15px Arial, Helvetica, sans-serif;
+  color:#80b7d5;
+  text-align:left;
+  margin:0
+}
+
+.login .lnk-forgot-pass {
+  float:right;
+  font:11px/15px Arial, Helvetica, sans-serif;
+  color:#80b7d5
+}
+
+.login .submit {
+  background:url(../images/sites/btn-go.gif) no-repeat;
+  width:64px;
+  height:49px;
+  float:right;
+  text-indent:-9999px;
+  overflow:hidden;
+  border:0;
+  cursor:pointer;
+  margin:16px 21px 0 0;
+  padding:48px 0 0 63px
+}
+
+.forgot-pass fieldset {
+  width:100%;
+  display:block;
+  overflow:hidden;
+  margin:17px 0 0
+}
+
+.forgot-pass legend {
+  font:bold 12px/14px Arial, Helvetica, sans-serif;
+  color:#fff;
+  padding:0 0 0 110px
+}
+
+.forgot-pass .row {
+  width:100%;
+  overflow:hidden;
+  padding:14px 0 0
+}
+
+.forgot-pass label {
+  width:82px;
+  float:left;
+  font:11px/18px Arial, Helvetica, sans-serif;
+  color:#fff;
+  text-align:right;
+  margin:0 28px 0 0
+}
+
+.forgot-pass .submit {
+  background:url(../images/sites/btn-send.gif) no-repeat;
+  width:64px;
+  height:19px;
+  float:left;
+  text-indent:-9999px;
+  overflow:hidden;
+  border:0;
+  cursor:pointer;
+  margin:0 0 0 26px;
+  padding:18px 0 0 63px
+}
+
+.lnk-login {
+  background:url(../images/sites/ico-back.gif) no-repeat 0 50%;
+  float:right;
+  font:11px/15px Arial, Helvetica, sans-serif;
+  color:#80b7d5;
+  margin:-6px 111px 0 0;
+  padding:0 0 0 16px
+}
+
+.login,.forgot-pass {
+  width:430px;
+  height:100px;
+  overflow:hidden;
+}
+
+.login .string,.forgot-pass .string {
+  background:url(../images/sites/login-string.gif) no-repeat;
+  width:195px;
+  height:16px;
+  float:left;
+  padding:2px 7px 0
+}
+#footer {
+  height:25px;
+  overflow:hidden;
+  padding:56px 0 20px
+}
+
+#footer span {
+  float:right;
+  width:220px;
+  text-align:right;
+  color:#06466b;
+  font:11px/14px Arial, Helvetica, sans-serif;
+  margin:0
+}
+
+#footer ul {
+  text-align:center;
+  overflow:hidden;
+  margin:0;
+  padding:0 0 0 220px
+}
+
+#footer ul li {
+  display:inline;
+  list-style:none;
+  padding:0 12px
+}
+
+#footer ul a {
+  color:#1096dc;
+  text-decoration:none;
+  font:11px/14px Arial, Helvetica, sans-serif
+}
+
+#footer ul a:hover {
+  text-decoration:underline
+}
+
+.login .lnk-forgot-pass:hover,.lnk-login:hover,.btn-let-me-in:hover,.btn-more-about-us:hover {
+  text-decoration:none
+}
+
+* html .forgot-pass legend,* +html .forgot-pass legend {
+  margin:0 0 0 -7px
+}
+
+.let-me-in-m:after,.let-me-in .head:after,.messages-m:after {
+  content:"";
+  display:block;
+  clear:both
+}
+
+* html .let-me-in .txt,* html .let-me-in label,* html #footer ul {
+  height:1%;
+  overflow:visible
+}
+
